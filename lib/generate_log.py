@@ -12,7 +12,7 @@ def generate_log(data):
     
     with open(filename, "w") as file:
         for entry in data:
-            file.write(f"{entry}\n")
+            file.write("\n".join(data))
     print(f"Log successfully written to {filename}")
     
     return filename
